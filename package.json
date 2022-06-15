@@ -6,6 +6,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "NODE_ENV=production node .",
+    "watch": "webpack --watch --mode=development --devtool=source-map",
     "dev": "NODE_ENV=development nodemon .",
     "build": "NODE_ENV=production webpack",
     "db:import": "sh database/import.sh",

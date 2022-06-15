@@ -1,10 +1,12 @@
 import React from 'react';
-import HelloWorld from '../components/hello-world';
+import Example from '../components/useState';
+// import HelloWorld from '../components/hello-world';
 
 export default function Home(props) {
   return (
     <div>
-      <HelloWorld />
+      {/* <HelloWorld /> */}
+      <Example />
     </div>
   );
 }
