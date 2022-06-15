@@ -1,3 +1,3 @@
-# final-project
+# react-hooks
 
-A full stack JavaScript solo project.
+A repository for learning React hooks
