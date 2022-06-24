@@ -1,8 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './app';
+import React, { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import '../server/public/styles.css';
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-const container = document.querySelector('#root');
-const root = ReactDOM.createRoot(container);
+function App() {
+  const [
+    status,
+    setStatus
+  ] = useState('Not Delivered');
 
-root.render(<App />);
+  return (
+    <div>
+      <h1>The package is: {status} </h1>
+      <button onClick={() => setStatus('Delivered')}>Deliver</button>
+    </div>
+  );
+}
+
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
