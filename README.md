@@ -1,3 +1,3 @@
 # react-hooks
 
-A repository for learning React hooks
+A repository for learning and practicing React hooks
